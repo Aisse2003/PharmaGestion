@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+
+     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">PharmaGestion.Gestion</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link" href="tableau-de-bord.html">Tableau de bord</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="produits.html">Produits</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="vente.html">Vente au comptoir</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link active" href="#">Dr Ndeye Coumba Faye.</a>
+                </li>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link text-underline active" href="connexion.html">
+                        Se deconnecter
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container  mt-3">
+        <div class="form">
+            <form class="form-inline my-2 my-lg-0">
+                <div class="card">
+                    <div class="card-header ">
+                        <div class="row">
+                            <h1 class="col-md-10">Produits</h1>
+                            <div class="col-md-2 text-end">
+                               <a href="#" class="btn btn-success btn-sm  ">Ajouter un produit</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                        <table class="table  table-striped mt-5">
+                                <thead class="table-dark text-white">
+                                    <tr >
+                                        <th>Ref</th>
+                                        <th>Produit</th>
+                                        <th>Prix (FCFA)</th>
+                                        <th>Stock</th>
+                                        <th>Peremption</th>
+                                        <th>Alerte</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>P001</td>
+                                        <td>Paracetamol 500 mg, boite de 16 comprimes</td>
+                                        <td>700</td>
+                                        <td>57</td>
+                                        <td>21/01/2029</td>
+                                        <td></td>
+                                        <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm" data-bs-toggle="modal"
+                                            data-bs-target="#modalSuppression">
+                                                
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>P002</td>
+                                        <td>Paracetamol 1 g, boite de 8 comprimes</td>
+                                        <td>950</td>
+                                        <td>53</td>
+                                        <td>21/02/2027</td>
+                                        <td>
+                                            <a href="" class="bg-warning text-decoration-none text-black rounded-pill">Peremption < 90 j</a>
+                                        </td>
+                                        <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm"
+                                            data-bs-toggle="modal"
+        data-bs-target="#modalSuppression">
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>P003</td>
+                                        <td>Paracetamol effervescent 500 mg, boite de 16 </td>
+                                        <td>1250</td>
+                                        <td>60</td>
+                                        <td>19/11/2028</td>
+                                        <td></td>
+                                        <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm" data-bs-toggle="modal"
+        data-bs-target="#modalSuppression">
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>P004</td>
+                                        <td>Paracetamol sirop enfant, 125 ml</td>
+                                        <td>1 700</td>
+                                        <td>58</td>
+                                        <td>20/01/2027</td>
+                                        <td>
+                                            <a href="" class="text-decoration-none text-black bg-danger rounded-pill">Perime</a>
+                                        </td>
+                                        <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm" data-bs-toggle="modal"
+        data-bs-target="#modalSuppression">
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>P005</td>
+                                        <td>Paracetamol suppositoires enfant 150 mg, boite de 10</td>
+                                        <td>1 400</td>
+                                        <td>25</td>
+                                        <td>3/09/2028</td>
+                                        <td></td>
+                                        <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm" data-bs-toggle="modal"
+        data-bs-target="#modalSuppression">
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>P006</td>
+                                        <td>Ibuprofene 400 mg, boite de 20 comprimes</td>
+                                        <td>1 400</td>
+                                        <td>4</td>
+                                        <td>2/10/2029</td>
+                                        <td>
+                                            <a href="" class="text-decoration-none text-black bg-warning rounded-pill">Stock faible</a>
+                                        </td>
+                                        <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm" data-bs-toggle="modal"
+        data-bs-target="#modalSuppression">
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>P007</td>
+                                        <td>Aspirine 500 mg, boite de 20 comprimes</td>
+                                        <td>1 100</td>
+                                        <td>10</td>
+                                        <td>09/05/2028</td>
+                                        <td></td>
+                                       <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm" data-bs-toggle="modal"
+        data-bs-target="#modalSuppression">
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>P008</td>
+                                        <td>Diclofenac gel, tube de 50 g</td>
+                                        <td>2 300</td>
+                                        <td>53</td>
+                                        <td>12/08/2028</td>
+                                        <td></td>
+                                        <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm" data-bs-toggle="modal"
+        data-bs-target="#modalSuppression">
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>P009</td>
+                                        <td>Sirop contre la toux sechhe, 150 ml</td>
+                                        <td> 2700</td>
+                                        <td>26</td>
+                                        <td>26/04/2028</td>
+                                        <td></td>
+                                        <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm" data-bs-toggle="modal"
+        data-bs-target="#modalSuppression">
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>P010</td>
+                                        <td>Sirop expectorant, 125 ml</td>
+                                        <td>2 600</td>
+                                        <td>57</td>
+                                        <td>25/09/2028</td>
+                                        <td></td>
+                                        <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalSuppression">
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>P011</td>
+                                        <td>Serum physiologique, 30 unidoses</td>
+                                        <td>1 800</td>
+                                        <td>61</td>
+                                        <td>18/03/2027</td>
+                                        <td>
+                                            <a href="" class="text-decoration-none text-black bg-warning rounded-pill">Peremption < 90 j</a>
+                                        </td>
+                                       <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalSuppression">
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>P012</td>
+                                        <td>Spray nasal a l'eau de mer, 100 ml</td>
+                                        <td>3 600</td>
+                                        <td>59</td>
+                                        <td>12/04/2028</td>
+                                        <td></td>
+                                        <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm" data-bs-toggle="modal"
+        data-bs-target="#modalSuppression">
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>P013</td>
+                                        <td>Loratadine 10 mg, boite de 10 comprimes</td>
+                                        <td>1 400</td>
+                                        <td>19</td>
+                                        <td>24/10/2028</td>
+                                        <td></td>
+                                        <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm" data-bs-toggle="modal"
+        data-bs-target="#modalSuppression">
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>P014</td>
+                                        <td>Cetirizine 10 mg, boite de 15 comprimes</td>
+                                        <td>1 500</td>
+                                        <td>44</td>
+                                        <td>12/07/2028</td>
+                                        <td></td>
+                                        <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm" data-bs-toggle="modal"
+        data-bs-target="#modalSuppression">
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>P015</td>
+                                        <td>Pastilles pour la gorge, boite de 24</td>
+                                        <td>2 000</td>
+                                        <td>38</td>
+                                        <td>21/09/2029</td>
+                                        <td></td>
+                                        <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm" data-bs-toggle="modal"
+        data-bs-target="#modalSuppression">
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>P016</td>
+                                        <td>Inhalateur nasal decongestionnant</td>
+                                        <td>1 700</td>
+                                        <td>40</td>
+                                        <td>29/07/2028</td>
+                                        <td></td>
+                                        <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm" data-bs-toggle="modal"
+        data-bs-target="#modalSuppression">
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>P017</td>
+                                        <td>Sels de rehydratation oral, sachet</td>
+                                        <td>250</td>
+                                        <td>56</td>
+                                        <td>04/07/2028</td>
+                                        <td></td>
+                                       <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm" data-bs-toggle="modal"
+        data-bs-target="#modalSuppression">
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>P018</td>
+                                        <td>Charbon actif, boite de 30 gelules</td>
+                                        <td>2 400</td>
+                                        <td>42</td>
+                                        <td>17/07/2027</td>
+                                        <td></td>
+                                       <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm"  data-bs-toggle="modal"
+        data-bs-target="#modalSuppression">
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>P019</td>
+                                        <td>Smectite, boite de 30 sachets</td>
+                                        <td>3 300</td>
+                                        <td>7</td>
+                                        <td>19/08/2028</td>
+                                        <td>
+                                            <a href="" class="text-decoration-none text-black bg-warning rounded-pill">Stock faible</a>
+                                        </td>
+                                        <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm" data-bs-toggle="modal"
+        data-bs-target="#modalSuppression">
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>P020</td>
+                                        <td>Antiacide suspension buvable, 250 ml</td>
+                                        <td>2 900</td>
+                                        <td>69</td>
+                                        <td>21/06/2028</td>
+                                        <td></td>
+                                        <td>
+                                             <button class="btn border border-secondary text-secondary btn-sm">
+                                                Modifier
+                                            </button>
+                                            <button class="btn border border-danger text-danger btn-sm" data-bs-toggle="modal"
+        data-bs-target="#modalSuppression">
+                                               Supprimer
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                        
+                </div>
+            </form>
+            
+<div class="modal fade" id="modalSuppression" tabindex="-1"
+     aria-labelledby="titreModal" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="titreModal">
+                    Supprimer ce produit ?
+                </h5>
+
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Fermer"></button>
+            </div>
+
+            <div class="modal-body">
+                Cette action est définitive.
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm"
+                        data-bs-dismiss="modal">
+                    Annuler
+                </button>
+
+                <button type="button" class="btn btn-danger btn-sm">
+                    Supprimer
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+                                            
+                               
+    <script src="../bootstrap.bundle.min.js"></script>
+</body>
+</html>

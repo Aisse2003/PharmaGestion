@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">PharmaGestion.Gestion</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link" href="tableau-de-bord.html">Tableau de bord</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produits.html">Produits</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link active" href="vente.html">Vente au comptoir</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link active" href="#">Dr Ndeye Coumba Faye.</a>
+                </li>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link text-underline active" href="connexion.html">
+                        Se deconnecter
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <main class="container mt-3 ">
+        <section >
+            <h1>Vente au comptoir</h1>
+             <div class="alert alert-danger" role="alert">
+                <strong>Stock insuffisant: il reste 4 unites d'Ibuprofene 400 mg.</strong>
+            </div>
+           
+            <table class="table ">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Produit</th>
+                        <th>Prix unitaire</th>
+                        <th>Quantite</th>
+                        <th>Total(FCFA)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">Paracetamol 500 mg, boite de 16 comprimes</td>
+                        <td>700</td>
+                        <td>2</td>
+                        <td>1 400</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Serviettes hygieniques, paquet de 10</td>
+                        <td>1 200</td>
+                        <td>1</td>
+                        <td>1 200</td>
+                    </tr>
+
+                    <tr class="fw-bold">
+                        <td></td>
+                        <td></td>
+                        <td>Total a payer</td>
+                        <td>2 600</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button type="button" class="btn btn-success display p-3">Enregistrer la vente</button>
+
+
+        </section>
+    </main>
+    <script src="../bootstrap.bundle.min.js"></script>
+</body>
+</html>

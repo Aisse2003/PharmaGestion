@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+
+     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">PharmaGestion.Gestion</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link" href="tableau-de-bord.html">Tableau de bord</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="produits.html">Produits</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="vente.html">Vente au comptoir</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link active" href="#">Dr Ndeye Coumba Faye.</a>
+                </li>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link text-underline active" href="#">
+                        Se deconnecter
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <main>
+
+    <div class="container py-2 mt-3">
+        <h4 class="mb-2">Modifier le produit P006</h4>
+
+        <div class="card shadow p-2">
+            <div class="card-body p-2">
+                <form>
+                    <div class="row g-2 mb-2">
+                        <div class="col-md-3">
+                            <label class="form-label small mb-1">Référence</label>
+                            <input type="text" class="form-control form-control-sm" value="P006" readonly>
+                        </div>
+
+                        <div class="col-md-9">
+                            <label class="form-label small mb-1">Nom</label>
+                            <input type="text" class="form-control form-control-sm" value="Ibuprofène 400 mg, boîte de 20 comprimés">
+                        </div>
+                    </div>
+
+                    <div class="row g-2 mb-2">
+                        <div class="col-md-6">
+                            <label class="form-label small mb-1">Catégorie</label>
+                            <select class="form-select form-select-sm">
+                                <option selected>Douleur et fièvre</option>
+                                <option>Antibiotiques</option>
+                                <option>Vitamines</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label small mb-1">Fournisseur</label>
+                            <select class="form-select form-select-sm">
+                                <option selected>Cofimed Afrique (fictif)</option>
+                                <option>Pharma Distribution</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row g-2 mb-4">
+                        <div class="col-md-3">
+                            <label class="form-label small mb-1">Prix d'achat (FCFA)</label>
+                            <input type="number" class="form-control form-control-sm" value="900">
+                        </div>
+
+                        <div class="col-md-3">
+                            <label class="form-label small mb-1">Prix de vente (FCFA)</label>
+                            <input type="number" class="form-control form-control-sm" value="800">
+                            <div class="text-danger">
+                                Le prix de vente doit être supérieur au prix d'achat.
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label class="form-label small mb-1">Stock</label>
+                            <input type="number" class="form-control form-control-sm" value="4">
+                        </div>
+
+                        <div class="col-md-3">
+                            <label class="form-label small mb-1">Seuil d'alerte</label>
+                            <input type="number" class="form-control form-control-sm" value="10">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label small mb-1">Date de péremption</label>
+                            <input type="date" class="form-control form-control-sm" value="2029-02-10">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success btn-sm">Enregistrer</button>
+                    <button type="reset" class="btn btn-outline-secondary btn-sm">Annuler</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</main>
+<script src="../bootstrap.bundle.min.js"></script>
+</body>
+</html>

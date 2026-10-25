@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+
+     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">PharmaGestion.Gestion</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link active" href="tableau-de-bord.html">Tableau de bord</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produits.html">Produits</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="vente-au-comptoir.html">Vente au comptoir</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link active" href="#">Dr Ndeye Coumba Faye.</a>
+                </li>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link text-underline active" href="#">
+                        Se deconnecter
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+<section class="container mt-2  p-2">
+    <h1>Tableau de bord</h1>
+    <div class="row mt-4 gap-3">
+        <div class="col-md-3 shadow p-2 card">
+            <p>Ventes des 30 derniers jours</p>
+            <h1>903 300 FCFA</h1>
+        </div>
+        <div class="col-md-3 shadow p-1 card ">
+            <p>Valeur du stock (prix d'achat)</p>
+            <h1>4 516 850 FCFA</h1>
+        </div>
+        <div class="col-md-3 shadow p-1 card border border-danger">
+             <p>Produits en alerte</p>
+            <h1 class="text-danger">13</h1>
+        </div>
+        <div class="col-md-2 shadow p-1 card border border-warning">
+            <p> Produits a commander </p>
+            <h1 class="text-warning">6</h1>
+        </div>
+        
+    </div>
+</section>
+
+<section class="container mt-3 g-3 p-2">
+    <h3 class="">A commander</h3>
+    <table class="table border shadow  mt-3 bg-white">
+    
+     <tbody class=" container fw-semibold">
+        <tr>
+            <td >P006</td>
+            <td>Ibuprofene 400 mg, boite de 20 comprimes</td>
+              <td>
+           <button class="btn btn-warning btn-sm rounded-pill ">
+                4/10
+            </button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>P019</td>
+            <td>Smectite, boite de 30 sachets</td>
+              <td>
+           <button class="btn btn-warning btn-sm rounded-pill">
+                7/10
+            </button>
+            </td>
+        </tr>
+        <tr>
+            <td>P024</td>
+            <td>Vitamine C 500 mg a croquer, tube de 20</td>
+              <td>
+           <button class="btn btn-danger btn-sm rounded-pill">
+                0/10
+            </button>
+            </td>
+        </tr>
+        <tr>
+            <td>P035</td>
+            <td>Ecran solaire SPF 50, 100 ml</td>
+              <td>
+           <button class="btn btn-warning btn-sm rounded-pill">
+                9/10
+            </button>
+            </td>
+        </tr>
+        <tr>
+            <td>P044</td>
+            <td>Bain de bouche, 250 ml</td>
+              <td>
+           <button class="btn btn-danger btn-sm rounded-pill">
+                0/10
+            </button>
+            </td>
+        </tr>
+        <tr>
+            <td>P058</td>
+            <td>Thermometre digital</td>
+              <td>
+           <button class="btn btn-danger btn-sm rounded-pill">
+                0/10
+            </button>
+            </td>
+        </tr>
+     </tbody>
+    </table>
+    
+    </div>
+</section>
+
+        
+            
+    
+    <script src="../bootstrap.bundle.min.js"></script>
+</body>
+</html>

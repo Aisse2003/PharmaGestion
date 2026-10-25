@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <nav class=" navbar navbar-expand-sm navbar-dark bg-success">
+        <div class="container">
+        <a class=" navbar-brand fw-bold " href="#">Pharmacie Ndeye Coumba</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Accueil </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="catalogue.html">Catalogue</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="Gestion/connexion.html">Espace de gestion</a>
+                </li>
+               
+                
+               
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <main>
+    <div class="container mt-3">
+        <h1 class="display mt-5">Catalogue de parapharmacie</h1>
+
+        <p class="lead mt-3 fw-semibold">Prix en FCFA. Les medicaments se delivrent uniquement au comptoir.</p>
+    </div>
+    
+
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-6">
+                <p>Rechercher</p>
+                <div class="card p-3"></div>
+
+            </div>
+            <div class="col-md-4">
+                <p>Categorie</p>
+                <select class="form-select col-md-4" aria-label="Default select example">
+                        <option selected>Toutes les categories</option>
+                    </select>
+
+            </div>
+            <div class="col-md-2 mt-5 p-3">
+                <button type="button" class="btn btn-outline-dark">Filtrer</button>
+            
+            </div>   
+        </div>
+    </div>
+<div class="container">
+    <table class="table table-bordered table-striped ">
+        <thead class="text-white table-dark" >
+            <tr>
+                <th>Produit</th>
+                <th>Categorie</th>
+                <th>Prix (FCFA)</th>
+                <th>Disponibilite</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Vitamine C 500g a croquer, tube de 20</td>
+                <td>Vitamines et complements</td>
+                <td>1 900</td>
+                <td>
+                    <button type="button" class="btn btn-secondary">Sur commande</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Mulivitamines adulte, boite de 30</td>
+                <td>Vitamines et complements</td>
+                <td>5 200</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Fer et acide folique, boite de 30</td>
+                <td>Vitamines et complements</td>
+                <td>2 100</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Magnesium et vitamines B6, boite de 40</td>
+                <td>Vitamines et complements</td>
+                <td>4 200</td>
+                <td>
+                    <button type="button" class="btn btn-secondary">Sur commande</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Zinc 15 mg, boite de 30</td>
+                <td>Vitamines et complements</td>
+                <td>3 000</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Omega 3, boite de 60 capsules</td>
+                <td>Vitamines et complements</td>
+                <td>6 800</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Gelee royale, boite de 20 ampoules</td>
+                <td>Vitamines et complements</td>
+                <td>8 000</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Vitamine D3, flacon de 10 ml</td>
+                <td>Vitamines et complements</td>
+                <td>3 500</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Beure de karite pur, 250 g</td>
+                <td>Soins du visage et du corps</td>
+                <td>2 500</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Lait corporel hydratant, 50 ml</td>
+                <td>Soins du visage et du corps</td>
+                <td>3 800</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Creme visage hydratant, 50 ml</td>
+                <td>Soins du visage et du corps</td>
+                <td>5 700</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Ecran solaire SPF 50, 100 ml</td>
+                <td>Soins du visage et du corps</td>
+                <td>8 200</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Huile de nigelle, 100 ml</td>
+                <td>Soins du visage et du corps</td>
+                <td>3 200</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Huile d'amande douce, 100 ml</td>
+                <td>Soins du visage et du corps</td>
+                <td>2 800</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Baume a levre</td>
+                <td>Soins du visage et du corps</td>
+                <td>1 300</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Creme pour les mains, 75 ml</td>
+                <td>Soins du visage et du corps</td>
+                <td>2 300</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Savon au neem, 100 g</td>
+                <td>Hygiene</td>
+                <td>700</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Gel hydroalcoolique, 100 ml</td>
+                <td>Bebe et maman</td>
+                <td>1 100</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Dentifrice au fluor, 75 ml</td>
+                <td>Bebe et maman</td>
+                <td>1 400</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Brosse a dents souple</td>
+                <td>Bebe et maman</td>
+                <td>800</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Bain de bouche, 250 ml</td>
+                <td>Bebe et maman</td>
+                <td>2 700</td>
+                <td>
+                    <button type="button" class="btn btn-secondary">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Serviettes hygieniques, paquet de 10</td>
+                <td>Bebe et maman</td>
+                <td>1 200</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Deodorant a bille, 50 ml</td>
+                <td>Bebe et maman</td>
+                <td>2 400</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Couches bebe taille 3, paquet de 30</td>
+                <td>Bebe et maman</td>
+                <td>7 200</td>
+                <td>
+                    <button type="button" class="btn btn-secondary">Sur commande</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Lait infantile 1er age, boite de 400 g</td>
+                <td>Premiers secours et prevention</td>
+                <td>6 900</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Lingettes bebe, paquet de 72</td>
+                <td>Premiers secours et prevention</td>
+                <td>2 300</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Liniment oleo-calcaire, 500 ml</td>
+                <td>Premiers secours et prevention</td>
+                <td>3 300</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Biberon, 250 ml</td>
+                <td>Premiers secours et prevention</td>
+                <td>3 800</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Creme pour le change, 100 g</td>
+                <td>Premiers secours et prevention</td>
+                <td>3 500</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Thermometre de bain</td>
+                <td>Premiers secours et prevention</td>
+                <td>2 700</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Pandements assortis, boite de 20</td>
+                <td>Premiers secours et prevention</td>
+                <td>1 300</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Compresses steriles, boite de 50</td>
+                <td>Premiers secours et prevention</td>
+                <td>2 300</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Alcool a 70%, 250 ml</td>
+                <td>Premiers secours et prevention</td>
+                <td>1 100</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Bande extensible 10 cm</td>
+                <td>Premiers secours et prevention</td>
+                <td>1 000</td>
+                <td>
+                    <button type="button" class="btn btn-secondary">Sur commande</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Thermometre digital</td>
+                <td>Premiers secours et prevention</td>
+                <td>3 900</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+             <tr>
+                <td>Antiseptique chlorhexidine, 250 ml</td>
+                <td>Premiers secours et prevention</td>
+                <td>2 700</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Repulsif anti-moustiques, 100 ml</td>
+                <td>Premiers secours et prevention</td>
+                <td>3 900</td>
+                <td>
+                    <button type="button" class="btn btn-success">Disponible</button>
+                </td>
+            </tr>
+
+        </tbody>
+
+</table>
+
+</div>
+</div>
+</main>
+<footer class="bg-black text-white p-3 mt-3">
+    <div class="container">
+        <div>Pharmacie Ndeye Coumba. Route principale, a cote du ront-point, Guediawaye</div>
+        <div>Telephone : 77 000 00 00 . Ouvert du lundi au samedi, de 8h a 22h</div>
+        <div>Projet pedagogique . structure fictive</div>
+    </div>
+</footer>
+
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
